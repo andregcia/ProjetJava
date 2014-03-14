@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import pion.Nourriture;
 import pion.Pion;
+import plateau.Verso;
 
 public class Joueur {
 
@@ -14,13 +15,13 @@ public class Joueur {
 	//liste des pions controlés par le joueur (personnage, bateau)
 	private ArrayList<Nourriture> pions;
 	//liste des tuiles possédées par le joueur dans sa main
-	private ArrayList<TuileVerso> main;
+	private ArrayList<Verso> main;
 	
 	public Joueur(int c){
 		couleur=c;
 		score=0;
 		pions=new ArrayList<Nourriture>();
-		main=new ArrayList<TuileVerso>();
+		main=new ArrayList<Verso>();
 	}
 
 	//TODO
@@ -45,9 +46,10 @@ public class Joueur {
 	}
 	
 	//TODO
-	public TuileVerso retirerTuile(){
+	public Verso retirerTuile(){
 		//retire une tuile du plateau 
 		//retourne la TuileVerso correspondante
+		return test;
 	}
 	
 	//TODO
@@ -96,12 +98,12 @@ public class Joueur {
 	}
 
 
-	public ArrayList<TuileVerso> getMain() {
+	public ArrayList<Verso> getMain() {
 		return main;
 	}
 
 
-	public void setMain(ArrayList<TuileVerso> main) {
+	public void setMain(ArrayList<Verso> main) {
 		this.main = main;
 	}
 }
