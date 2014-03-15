@@ -1,13 +1,15 @@
 package plateau;
 
+import util.Environnement;
+
 public class Tuile {
 
 	//type de tuile (plage, foret, montagne)
-	private int environnement;
+	private Environnement environnement;
 	//effet au verso de la tuile
 	private Verso verso;
 	
-	public Tuile(int e, Verso tv){
+	public Tuile(Environnement e, Verso tv){
 		environnement = e;
 		verso = tv;
 	}
@@ -22,11 +24,11 @@ public class Tuile {
 
 
 
-	public int getEnvironnement() {
+	public Environnement getEnvironnement() {
 		return environnement;
 	}
 
-	public void setEnvironnement(int environnement) {
+	public void setEnvironnement(Environnement environnement) {
 		this.environnement = environnement;
 	}
 

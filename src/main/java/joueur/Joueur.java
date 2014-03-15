@@ -5,11 +5,12 @@ import java.util.ArrayList;
 import pion.Nourriture;
 import pion.Pion;
 import plateau.Verso;
+import util.Couleur;
 
 public class Joueur {
 
 	//couleur du joueur
-	private int couleur;
+	private Couleur couleur;
 	//score du joueur, cumulé grâce à la valeur de chaque pion personnage
 	private int score;
 	//liste des pions controlés par le joueur (personnage, bateau)
@@ -17,7 +18,7 @@ public class Joueur {
 	//liste des tuiles possédées par le joueur dans sa main
 	private ArrayList<Verso> main;
 	
-	public Joueur(int c){
+	public Joueur(Couleur c){
 		couleur=c;
 		score=0;
 		pions=new ArrayList<Nourriture>();

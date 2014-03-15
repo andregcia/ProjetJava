@@ -1,15 +1,17 @@
 package pion;
 
+import util.Couleur;
+
 public class Personnage extends Pion implements Nourriture{
 
 	//couleur correspondant au joueur
-	private int couleur;
+	private Couleur couleur;
 	//valeur du pion personnage (de 1 à 6)
 	private int valeur;
 	//statut (terre, mer, bateau)
 	private int statut;
 	
-	public Personnage(int c, int val){
+	public Personnage(Couleur c, int val){
 		couleur=c;
 		valeur=val;
 		statut=0; //par defaut
@@ -36,11 +38,11 @@ public class Personnage extends Pion implements Nourriture{
 
 
 	
-	public int getCouleur() {
+	public Couleur getCouleur() {
 		return couleur;
 	}
 
-	public void setCouleur(int couleur) {
+	public void setCouleur(Couleur couleur) {
 		this.couleur = couleur;
 	}
 

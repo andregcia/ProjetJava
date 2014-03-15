@@ -1,14 +1,17 @@
 package plateau;
 
+import util.Action;
+import util.TypeEffet;
+
 public class Verso {
 
 	//type d'effet à jouer
-	private int type;
+	private TypeEffet type;
 	//action à réaliser
-	private int action;
+	private Action action;
 	
 	
-	public Verso(int t, int a){
+	public Verso(TypeEffet t, Action a){
 		type = t;
 		action = a;
 	}
@@ -35,19 +38,19 @@ public class Verso {
 		return "Verso [type=" + type + ", action=" + action + "]";
 	}
 
-	public int getType() {
+	public TypeEffet getType() {
 		return type;
 	}
 
-	public void setType(int type) {
+	public void setType(TypeEffet type) {
 		this.type = type;
 	}
 
-	public int getAction() {
+	public Action getAction() {
 		return action;
 	}
 
-	public void setAction(int action) {
+	public void setAction(Action action) {
 		this.action = action;
 	}
 }
