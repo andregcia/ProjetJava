@@ -12,7 +12,6 @@ public class Main {
         
         //On pose la question du nombre de joueur
         int nbJoueur = 0;
-        System.out.println("prout");
         while(nbJoueur < 2 || nbJoueur > 4){
             Scanner sc=new Scanner(System.in);
             System.out.println("Combien de joueur êtes-vous ? ");
