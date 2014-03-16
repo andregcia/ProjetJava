@@ -1,6 +1,7 @@
 package plateau;
 
 import java.util.Arrays;
+import pion.Constantes;
 
 public class Plateau {
 
@@ -25,7 +26,7 @@ public class Plateau {
 	
 	//TODO
 	public void initTuiles(){
-		//place les tuiles de façon random 
+		//place les tuiles de façon random
 	}
 	
 	//TODO
