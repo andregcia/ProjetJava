@@ -3,7 +3,7 @@ package Main;
 import java.util.Scanner;
 import joueur.Joueur;
 import util.Couleur;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Main {
         
@@ -32,7 +32,7 @@ public class Main {
         }
         
         //Choix de la couleur pour chaque joueur
-        Joueur[] tabJoueur = new Joueur[nbJoueur-1];
+        ArrayList<Joueur> listJoueur = new ArrayList<Joueur>();
         
         for (int i=0;i<nbJoueur;i++){
             //On présente la liste des couleurs
@@ -86,7 +86,7 @@ public class Main {
             }
             
             //On attribut la couleur au joueur
-            tabJoueur[i] = new Joueur(colorJoueur);
+            //listJoueur.add(new Joueur(colorJoueur));
         }
     }
 }
