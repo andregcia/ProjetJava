@@ -37,11 +37,25 @@ public class Main {
             boolean colorExist = false;
             int nbCouleur = 1;
             Couleur colorJoueur = null;
+            boolean colorOk = true;
             while(!colorExist){
                 System.out.print("Choisir une couleur : ");
                 for(Couleur color : Couleur.values()){
-                    System.out.print(nbCouleur + "-" + color.toString() + " ");
-                    nbCouleur++;
+                    if(listJoueur != null){
+                        for(Joueur j : listJoueur){
+                            if(j.getCouleur().equals(color)){
+                                colorOk = false;
+                            }
+                        }
+                        //Si la couleur n'est pas déjà prise alors on l'affiche
+                        if(colorOk){
+                            System.out.print(nbCouleur + "-" + color.toString() + " ");
+                        }
+                        colorOk = true;
+                    }else{
+                        System.out.print(nbCouleur + "-" + color.toString() + " ");
+                    }
+                    nbCouleur++;                    
                 }
                 System.out.println("");
                 System.out.print("Mon choix : ");

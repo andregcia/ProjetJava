@@ -69,7 +69,7 @@ public class Joueur {
 	}
 
 
-	public int getCouleur() {
+	public Couleur getCouleur() {
 		return couleur;
 	}
 
