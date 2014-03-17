@@ -2,6 +2,7 @@ package plateau;
 
 import java.util.ArrayList;
 
+import pion.Bete;
 import pion.Pion;
 
 public class Case {
@@ -65,6 +66,9 @@ public class Case {
 		//si barque, on ajoute le pion à sa liste de passagers (embarquerPion(p);)
 		//si barque, pas possible de stocker une barque supplémentaires
 		//si bete, verifier si nourriture présente
+		if(p instanceof Bete){
+			pions.add(p);
+		}
 	}
 	
 	//TODO
