@@ -1,5 +1,6 @@
 package pion;
 
+import java.awt.Color;
 import util.Couleur;
 
 public class Personnage extends Pion implements Nourriture{

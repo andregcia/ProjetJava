@@ -74,7 +74,7 @@ public class Joueur {
 	}
 
 
-	public void setCouleur(int couleur) {
+	public void setCouleur(Couleur couleur) {
 		this.couleur = couleur;
 	}
 

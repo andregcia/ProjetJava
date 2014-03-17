@@ -1,22 +1,20 @@
+
 import java.util.Scanner;
-
 import joueur.Joueur;
-import util.Couleur;
-
 import java.util.ArrayList;
-
 import pion.Personnage;
 import plateau.Plateau;
+import util.Couleur;
 
 public class Main {
 
 	public static void main(String[] args) {
 
 		// création du plateau de jeu
-		Plateau plateau = new Plateau();
+		//Plateau plateau = new Plateau();
 
 		// initialisation du plateau de jeu
-		plateau.init();
+		//plateau.init();
 		
 		//On pose la question du nombre de joueur
 		Scanner sc=new Scanner(System.in);
@@ -39,13 +37,14 @@ public class Main {
 
 		//Choix de la couleur pour chaque joueur
 		ArrayList<Joueur> listJoueur = new ArrayList<Joueur>();
-
+                                
 		for (int i=0;i<nbJoueur;i++){
 			//On présente la liste des couleurs
 			boolean colorExist = false;
 			int nbCouleur = 1;
 			Couleur colorJoueur = null;
 			boolean colorOk = true;
+                                                
 			while(!colorExist){
 				System.out.print("Choisir une couleur : ");
 				for(Couleur color : Couleur.values()){
