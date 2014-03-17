@@ -194,7 +194,7 @@ public class Plateau {
 	public void initVisitable(){
 		// initialise toutes les cases en visitables
 		for(int i = 0; i < 12; i++){
-			for(int j = 0; j < 13; i++){
+			for(int j = 0; j < 13; j++){
 				tabCases[i][j] = Case.getMer();
 			}
 		}
