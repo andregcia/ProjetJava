@@ -1,5 +1,3 @@
-package Main;
-
 import java.util.Scanner;
 import joueur.Joueur;
 import util.Couleur;
@@ -62,19 +60,19 @@ public class Main {
                 
                 switch(nbCouleur){
                     case 1:
-                        colorJoueur = colorJoueur.VERT;
+                        colorJoueur = Couleur.VERT;
                         colorExist = true;
                         break;
                     case 2:
-                        colorJoueur = colorJoueur.BLEU;
+                        colorJoueur = Couleur.BLEU;
                         colorExist = true;
                         break;
                     case 3:
-                        colorJoueur = colorJoueur.ROUGE;
+                        colorJoueur = Couleur.ROUGE;
                         colorExist = true;
                         break;
                     case 4:
-                        colorJoueur = colorJoueur.JAUNE;
+                        colorJoueur = Couleur.JAUNE;
                         colorExist = true;
                         break;
                     default: 
@@ -86,7 +84,7 @@ public class Main {
             }
             
             //On attribut la couleur au joueur
-            //listJoueur.add(new Joueur(colorJoueur));
+            listJoueur.add(new Joueur(colorJoueur));
         }
     }
 }
